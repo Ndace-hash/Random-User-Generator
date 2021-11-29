@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+ <head>
+  <title>Random User Generator</title>
+  <link rel="stylesheet" href="./main.css" />
+ </head>
+ <body>
+  <div id="app">
+   <img :src="picture" :alt="firstName" v-bind:class="gender"/>
+   <h1>{{ firstName }} {{ lastName }}</h1>
+   <h3>email: {{ email }}</h3>
+   <button v-bind:class="gender" v-on:click="getRandomUser">Get Random User</button>
+  </div>
+  
+  <script src="./vue.js"></script>
+  <script src="./index.js"></script>
+ </body>
+</html>
